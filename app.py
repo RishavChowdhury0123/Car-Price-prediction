@@ -11,10 +11,10 @@ st.set_page_config(page_title='Car price predictor', layout='wide')
 
 @st.cache(allow_output_mutation=True, show_spinner=False, suppress_st_warning=True)
 def load_data():
-    path= r'C:\Users\DELL\Python files\Car Price\df.pkl'
+    path= 'df.pkl'
     with open(path, 'rb') as ref:
         df= pickle.load(ref)
-    path= r'C:\Users\DELL\Python files\Car Price\model.pkl'
+    path= 'model.pkl'
     with open(path, 'rb') as ref:
         pipe= pickle.load(ref)
     
